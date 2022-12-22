@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <style>
+
+
+     * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        background-color: black;   
+        
+      }
+
+    nav {
+        width: 800px;
+        height: 100px;
+        margin-left: 50px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #logo {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+    }
+
+    #nav-bar ul {
+        height: 20px;
+        width: 600px;
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-evenly;
+    }
+
+    #nav-bar ul a {
+        text-decoration: none;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        
+    }
+
+    #nav-bar ul li :hover {
+        border-bottom: 1px solid white;
+    }
+
+    #tag-line {
+        color: white;
+        margin-top: 55px;
+        font-size: 80px;
+        font-weight: 900;
+        line-height: 90px;
+    }
+
+    #caption-parent {
+        /* background-color: aqua; */
+        margin-top: 100px;
+        margin-left: 50px;
+        height: 440px;
+        width: 1000px;
+
+    }
+
+    #tag-line-small {
+        color: white;
+        display: block;
+        margin-top: 50px;
+        letter-spacing: 1px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+
+    .btn {
+        display: block;
+        margin-top: 80px;
+        text-decoration: none;
+        color: white;
+        width: 250px;
+        padding: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1px;
+        background-color: #ff1010;
+    }
+
+    .btn:hover {
+        background-color: #ccc;
+        color: black;
+    }
+
+    #menu {
+        display: none;
+    }
+    #h1{
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 250px;
+ 
+        
+    }
+
+    @media only screen and (max-width: 900px) {
+       main{
+            overflow: auto;
+       }
+
+        #menu {
+        display: block;
+        position: relative;
+    }
+
+    #normal {
+        display: none;
+    }
+
+    #menu {
+        height: 100px;
+        width: 100px;
+        
+    }
+
+    a:hover {
+        background: #1b9bff;
+        transition: 0.5s;
+    }
+
+    .checkbtn {
+        font-size: 25px;
+        color: white;
+        margin: 7px;
+        cursor: pointer;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        display: none;
+        width: 200px;
+        height: 200px;
+        color: white;
+        float: left;
+        border-radius: 15px;
+        text-align: center;
+        transition: all 0.5s;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 25px;
+        margin-top: 10px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+      
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #ccc;
+    }
+
+    #check:checked~ul {
+        display: block;
+    }
+
+   
+    #h1{
+        /* color: white; */
+        color: white;
+        display: block;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    
+   }
+
+
+</style>
+</head>
+<body>
+    <main id="header">
+        
+
+        <nav id="normal">
+            
+          <div id="logo">Bulid Bar</div>
+  
+            <div id="nav-bar">
+              
+              <ul type="none">
+                
+                <li><a href="./Classes.html">Classes</a></li>
+                <li><a href="./PersonalWorkout.html">Personal Workouts</a></li>
+                <li><a href="./Plans.html">Prices & Plans</a></li>
+                <li><a href="./Shedule.html">Schedule</a></li>
+                <li><a href="">Sign up</a></li>
+  
+              </ul>
+            
+            </div>
+          
+          </nav>
+  
+          <nav id="menu">
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+              <i class="fas fa-thin fa-bars"></i>
+            </label>
+           
+        
+                  <ul>
+                    <li><a href="./Classes.html">Classes</a></li>
+                    <li><a href="./PersonalWorkout.html">Personal Workouts</a></li>
+                    <li><a href="./Plans.html">Prices & Plans</a></li>
+                    <li><a href="./Shedule.html">Schedule</a></li>
+                    <li><a href="./Form.html">Sign up</a></li>
+                  </ul>
+    
+          </nav>
+        
+         </main>
+        
+       <!-- / <h1 id="h1">Thank you..! for showing interest our team will contact you</h1> -->
+       
+       
+
+       
+       <blockquote class="blockquote" id="h1">
+        <p class="mb-0">Thank you..!</p><br>
+        <footer class="blockquote-footer">for showing interest our team will contact you.</footer>
+      </blockquote>
+</body>
+
+</html>

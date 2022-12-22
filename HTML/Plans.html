@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Plans</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: black;
+        font-family: "Roboto", sans-serif;
+        color: white;
+      }
+
+      #heading {
+        font-size: 50px;
+        margin-top: 150px;
+        margin-left: 150px;
+      }
+
+      #main-container {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        /* background-color: aqua; */
+        justify-content: space-evenly;
+      }
+
+      #basic {
+        height: 500px;
+        width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #basic h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      #unlimated h1 {
+        text-align: center;
+        margin-left: 70px;
+        margin-bottom: 20px;
+      }
+
+      .box {
+        margin: 0 auto;
+        height: 350px;
+        width: 400px;
+      }
+
+      #unlimated {
+        height: 500px;
+        width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #basic h3 {
+        text-align: center;
+      }
+
+      #unlimated h3 {
+        text-align: center;
+      }
+      #basic h2 {
+        text-align: center;
+      }
+      #unlimated h2 {
+        text-align: center;
+      }
+
+      ul {
+        margin: 20px;
+        margin-left: 160px;
+        
+      }
+      ul li {
+        margin: 10px;
+        font-weight: normal;
+        font-family: "DM Sans", sans-serif;
+        letter-spacing: 2px;
+        font-size: 14px;
+        
+      }
+      ul li span{
+        font-weight: normal;
+      }
+    
+      #asking {
+        width: 100%;
+        overflow: auto;
+        background: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      #asking div {
+        width: 800px;
+        height: 300px;
+        display: flex;
+        background: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: auto;
+      }
+
+      #asking div h1 {
+        font-size: 40px;
+        letter-spacing: 1px;
+        margin: 10px;
+        color: black;
+        background: none;
+      }
+
+      #asking-btn {
+        margin: 20px;
+      }
+      .btn {
+        display: block;
+        margin-top: 80px;
+        text-decoration: none;
+        color: white;
+        width: 250px;
+        padding: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1px;
+        background-color: #ff1010;
+      }
+      @media only screen and (min-width: 360px) and (max-width: 768px) {
+        #asking div {
+          width: 576px;
+          height: 300px;
+        }
+
+        #asking div h1 {
+          font-size: 30px;
+        }
+
+        #asking-btn {
+          margin: 20px;
+          font-size: 15px;
+          width: 200px;
+        }
+        #main-container {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 800px;
+          /* background-color: aqua; */
+        }
+
+        #heading {
+          font-size: 30px;
+          margin: 0 auto;
+          text-align: center;
+        }
+      }
+      @media only screen and (max-width: 280px) {
+        #main-container {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        #heading {
+          font-size: 20px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        #asking div {
+          width: 280px;
+          height: 300px;
+        }
+
+        #asking div h1 {
+          font-size: 30px;
+        }
+
+        #asking-btn {
+          margin: 20px;
+          font-size: 15px;
+          width: 200px;
+        }
+      }
+      @media only screen and (min-width: 320px) and (max-width: 576px) {
+        #main-container {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        #heading {
+          font-size: 40px;
+          margin: 0 auto;
+          text-align: centers;
+        }
+        
+        #asking div {
+          width: 500px;
+          height: 300px;
+          overflow: auto;
+        }
+
+        #asking div h1 {
+          font-size: 20px;
+          margin: 0 auto;
+          
+        }
+
+        #asking-btn {
+          font-size: 12px;
+          width: 150px;
+          padding: 15px;
+          margin: 0 auto;
+          
+          margin-top: 30px;
+        }
+
+
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1 id="heading">PRICES & PLANS</h1>
+
+    <div id="main-container">
+      <div id="basic">
+        <div class="box">
+          <h1>BASIC</h1>
+          <h3>INCLUDED:</h3>
+
+          <ul>
+            <li>2x group workouts of your choice</li>
+            <li>Unlimited gym access</li>
+            <li>Personal workout</li>
+          </ul>
+
+          <h2>30000 Rs</h2>
+        </div>
+      </div>
+
+      <div id="unlimated">
+        <div class="box">
+          
+          <h1>UNLIMITED</h1>
+          
+          <h3>INCLUDED:</h3>
+
+          <ul>
+            <li>Unlimited group workouts of your choice</li>
+            <li>Unlimited gym access</li>
+            <li>3x personal workouts</li>
+            <li>Personal nutrition plan</li>
+          </ul>
+
+          <h2>50000 Rs</h2>
+
+        </div>
+      </div>
+    </div>
+   </body>
+</html>

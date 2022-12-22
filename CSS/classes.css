@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+  }
+  #Container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+
+  h1 {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 30px;
+  }
+
+  .btn {
+    display: block;
+    margin-top: 80px;
+    text-decoration: none;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: #ff1010;
+  }
+  #asking {
+    width: 100%;
+    overflow: auto;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  #asking div {
+    width: 800px;
+    height: 300px;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: auto;
+  }
+
+  #asking div h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 10px;
+    color: black;
+    background: none;
+  }
+
+  #asking-btn {
+    margin: 20px;
+  }
+
+  footer {
+    width: 100%;
+    background-color: black;
+    height: 700px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #working {
+    width: 500px;
+    margin: 100px;
+    height: 500px;
+  }
+
+  #working span {
+    display: block;
+    margin-left: 40px;
+    font-family: "DM Sans", sans-serif;
+    padding: 10px;
+  }
+
+  #working h1 {
+    padding: 10px;
+    text-align: start;
+  }
+
+  #address {
+    width: 500px;
+    margin: 100px;
+    height: 500px;
+  }
+
+  #address span {
+    display: block;
+    font-family: "DM Sans", sans-serif;
+    padding: 10px;
+    margin-left: 30px;
+  }
+
+  #address h1 {
+    padding: 10px;
+    text-align: start;
+  }
+
+  #address ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 50px;
+    width: 200px;
+    margin-left: 30px;
+  }
+
+  #address ul li i {
+    font-size: 30px;
+    margin: 7px;
+    color: white;
+  }
+
+  .cards {
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    /* background-color: white; */
+  }
+  #Container div img {
+    height: 400px;
+    width: 400px;
+  }
+  #Container div a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    background: none;
+    text-align: start;
+  }
+  @media only screen and (min-width: 320px) and (max-width: 576px) {
+    #Container{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #asking div {
+      width: 576px;
+      height: 300px;
+    }
+
+    #asking div h1 {
+      font-size: 30px;
+    }
+
+    #asking-btn {
+      margin: 20px;
+      font-size: 15px;
+      width: 200px;
+    }
+    .cards {
+      width: 300px;
+      height: 300px;
+      margin: 50px;
+      /* background-color: white; */
+    }
+    #Container div img {
+      height: 300px;
+      width: 300px;
+    }
+    #Container div a {
+      font-size: 15px;
+    }
+  }
+  @media only screen and (min-width: 360px) and (max-width: 768px) {
+    #Container{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #asking div {
+      width: 576px;
+      height: 300px;
+    }
+
+    #asking div h1 {
+      font-size: 30px;
+    }
+
+    #asking-btn {
+      margin: 20px;
+      font-size: 15px;
+      width: 200px;
+    }
+    .cards {
+      width: 300px;
+      height: 300px;
+      margin: 50px;
+      /* background-color: white; */
+    }
+    #Container div img {
+      height: 300px;
+      width: 300px;
+    }
+    #Container div a {
+      font-size: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 280px) {
+    #Container{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    #asking div {
+      width:  280px;
+      height: 300px;
+    }
+
+    #asking div h1 {
+      font-size: 30px;
+    }
+
+    #asking-btn {
+      margin: 20px;
+      font-size: 15px;
+      width: 200px;
+    }
+    .cards {
+      width: 300px;
+      height: 300px;
+      margin: 50px;
+      /* background-color: white; */
+    }
+    #Container div img {
+      height: 200px;
+      width: 200px;
+    }
+    #Container div a {
+      font-size: 15px;
+    }
+    #Container{
+      width: 280px;
+      flex-wrap: wrap;
+   
+    }
+  }

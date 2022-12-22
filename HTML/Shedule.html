@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>SCHEDULE</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: black;
+        color: white;
+
+        font-family: "Roboto", sans-serif;
+      }
+
+      #main {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .box {
+        height: 250px;
+        width: 350px;
+        margin: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        overflow: auto;
+      }
+      .box span {
+        display: block;
+        margin: 5px;
+        margin-left: 25px;
+        font-family: "DM Sans", sans-serif;
+        letter-spacing: 2px;
+      }
+      .space {
+        margin-top: 30px;
+      }
+      h1 {
+        margin: 20px;
+      }
+      #heading {
+        font-size: 50px;
+        margin-top: 150px;
+        margin-left: 100px;
+      }
+      #asking {
+        width: 100%;
+        overflow: auto;
+        background: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      #asking div {
+        width: 800px;
+        height: 300px;
+        display: flex;
+        background: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: auto;
+      }
+
+      #asking div h1 {
+        font-size: 40px;
+        letter-spacing: 1px;
+        margin: 10px;
+        color: black;
+        background: none;
+      }
+
+      #asking-btn {
+        margin: 20px;
+      }
+      .btn {
+        display: block;
+        margin-top: 80px;
+        text-decoration: none;
+        color: white;
+        width: 250px;
+        padding: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1px;
+        background-color: #ff1010;
+      }
+      @media only screen and (min-width: 320px) and (max-width: 576px) {
+        #main {
+          align-content: center;
+          justify-content: center;
+          height: 1800px;
+          overflow: auto;
+        }
+        #heading {
+          margin: 50px;
+        }
+        .box {
+          width: 250px;
+
+          align-items: flex-start;
+          justify-content: flex-start;
+        }
+        .box span {
+          margin: 8px;
+        }
+        h1 {
+          margin: 0px;
+        }
+       
+       
+ 
+        
+      }
+    
+      @media only screen and (min-width: 360px) and (max-width: 768px) {
+        #main {
+          align-content: center;
+          justify-content: center;
+          height: 1800px;
+        }
+        #heading {
+          margin: 50px;
+        }
+        .box {
+          align-items: flex-start;
+          justify-content: flex-start;
+        }
+        .box span {
+          margin: 8px;
+        }
+        h1 {
+          margin: 0px;
+        }
+        #asking div {
+          width: 300px;
+          height: 300px;
+          margin: 0 auto;
+        }
+
+        #asking div h1 {
+          font-size: 25px;
+          text-align: center;
+        }
+
+        #asking-btn {
+            
+          font-size: 12px;
+          margin: 0 auto;
+          margin-top: 20px;
+          width: 200px;
+        }
+      }
+      @media only screen and (max-width: 1075px) {
+        #main {
+          align-content: center;
+          justify-content: center;
+          height: 1800px;
+        }
+        #heading {
+          margin: 50px;
+        }
+        .box {
+          align-items: flex-start;
+          justify-content: flex-start;
+        }
+        .box span {
+          margin: 8px;
+        }
+        h1 {
+          margin: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1 id="heading">SCHEDULE</h1>
+    <div id="main">
+      <div class="box">
+        <h1>MONDAY</h1>
+        <span>4:30 - 5:30</span>
+        <span>Air yoga</span>
+        <div class="space"></div>
+        <span>5:30 - 6:30</span>
+        <span>Body building</span>
+      </div>
+      <div class="box">
+        <h1>TUESDAY</h1>
+        <span>4:30 - 5:30</span>
+        <span>Air yoga</span>
+        <div class="space"></div>
+        <span>5:30 - 6:30</span>
+        <span>Body building</span>
+      </div>
+      <div class="box">
+        <h1>WEDNESDAY</h1>
+        <span>8:00 - 8:50</span>
+        <span>Air yoga</span>
+        <div class="space"></div>
+        <span>2:00 - 2:45</span>
+        <span>Body building</span>
+      </div>
+      <div class="box">
+        <h1>THURSDAY</h1>
+        <span>8:00 - 8:50</span>
+        <span>Air yoga</span>
+        <div class="space"></div>
+        <span>2:00 - 2:45</span>
+        <span>Body building</span>
+      </div>
+      
+    </div>
+
+    <section id="asking">
+      <div>
+        <h1>ARE YOU READY FOR CHANGES?</h1>
+
+        <a href="./Form.html" id="asking-btn" class="btn">Make it happen</a>
+      </div>
+    </section>
+  </body>
+</html>

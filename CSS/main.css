@@ -1,0 +1,750 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 715px;
+    background-image: url(../Images/background.webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+nav {
+    width: 800px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+#nav-bar ul {
+    height: 20px;
+    width: 600px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+
+#nav-bar ul a {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#nav-bar ul li :hover {
+    border-bottom: 1px solid white;
+}
+
+#tag-line {
+    color: white;
+    margin-top: 55px;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 90px;
+}
+
+#caption-parent {
+    /* background-color: aqua; */
+    margin-top: 100px;
+    margin-left: 50px;
+    height: 440px;
+    width: 1000px;
+
+}
+
+#tag-line-small {
+    color: white;
+    display: block;
+    margin-top: 50px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+
+}
+
+.btn {
+    display: block;
+    margin-top: 80px;
+    text-decoration: none;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: #ff1010;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+
+#menu {
+    display: none;
+}
+
+
+
+/* page 2 classes */
+
+#classes {
+    width: 100%;
+    overflow: auto;
+}
+
+#classes h1 {
+    font-size: 40px;
+    margin: 20px;
+}
+
+#classes img {
+    width: 500px;
+    height: 350px;
+}
+
+#card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cards {
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+
+}
+
+#card h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+#class-btn {
+
+    margin: 0 auto;
+    margin-top: -40px;
+}
+
+/* page 3 banner  */
+#about {
+
+    margin-top: 20px;
+    width: 100%;
+    height: 800px;
+    background-image: url(../Images/background2.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: auto;
+    
+}
+
+#about div {
+    height: 500px;
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 100px;
+    margin-top: 150px;
+    padding: 0 16px;
+}
+
+#about-btn {
+    width: 200px;
+    margin: 20px;
+    height: 60px;
+}
+
+#about h1 {
+    margin: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+#about span {
+    font-size: 20px;
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: 1px;
+    letter-spacing: 2px;
+    text-align: start;
+    margin: 20px;
+    color: white;
+}
+
+#Class-banner {
+    width: 100%;
+    height: 800px;
+    background-image: url(../Images/background3.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: auto;
+    
+
+}
+
+#Class-banner div {
+    height: 500px;
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    justify-content: flex-start;
+    margin-top: 150px;
+    padding: 0 16px;
+
+}
+
+#Class-banner span {
+    font-size: 20px;
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: 1px;
+    letter-spacing: 2px;
+    text-align: start;
+    margin: 20px;
+    color: white;
+}
+
+#Class-banner h1 {
+    margin: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+#Class-banner-btn {
+    width: 200px;
+    height: 60px;
+    margin: 20px;
+}
+
+#asking {
+    width: 100%;
+    overflow: auto;
+      
+    
+}
+
+#asking div {
+    width: 800px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: auto;
+
+}
+
+#asking div h1 {
+
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+#asking-btn {
+    margin: 20px;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    height: 700px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#working {
+    width: 500px;
+    margin: 100px;
+    height: 200px;
+}
+
+#working span {
+    display: block;
+    font-family: "DM Sans", sans-serif;
+    padding: 10px;
+}
+
+#working h1 {
+    padding: 10px;
+}
+
+#address{
+    width: 500px;
+    margin: 100px;
+    height: 200px;
+}
+
+#address span {
+    display: block;
+    font-family: "DM Sans", sans-serif;
+    padding: 10px;
+}
+
+#address h1 {
+    padding: 10px;
+}
+
+#address ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 50px;
+    width: 200px;
+}
+
+#address ul li i {
+    font-size: 30px;
+    margin: 7px;
+    color: white;
+}
+
+/* responsive  ui */
+
+
+@media only screen and (max-width: 900px) {
+    #menu {
+        display: block;
+        position: absolute;
+    }
+
+    #normal {
+        display: none;
+    }
+
+    #menu {
+        height: 100px;
+        width: 100px;
+        margin: 40px;
+
+    }
+
+    a:hover {
+        background: #1b9bff;
+        transition: 0.5s;
+    }
+
+    .checkbtn {
+        font-size: 25px;
+        color: white;
+        margin: 7px;
+        cursor: pointer;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        display: none;
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        float: left;
+        border-radius: 15px;
+        text-align: center;
+        transition: all 0.5s;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #ccc;
+    }
+
+    #check:checked~ul {
+        display: block;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #caption-parent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 100px;
+        height: 440px;
+        width: 700px;
+
+    }
+
+    #tag-line {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #tag-line-small {
+        text-align: center;
+    }
+
+
+    
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    #caption-parent {
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        height: 440px;
+        width: 400px;
+
+    }
+
+    #tag-line-small {
+        text-align: center;
+        align-items: center;
+
+    }
+
+
+    #classes {
+        width: 400px;
+        overflow: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #classes h1 {
+        font-size: 30px;
+        margin: 20px;
+    }
+
+    #classes img {
+        width: 300px;
+        height: 300px;
+    }
+
+    #card {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards {
+        width: 300px;
+        height: 300px;
+        margin: 50px;
+
+    }
+
+    #card h2 {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 20px;
+    }
+
+    #class-btn {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    #about{
+        width: 540px;
+    }
+    #about div{
+        width: 400px;
+    }
+    #Class-banner{
+        width: 540px;
+    }
+    #Class-banner div{
+        width: 400px;
+    }
+    
+} 
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+
+    
+    #caption-parent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        height: 440px;
+        width: 360px;
+
+    }
+
+    #classes {
+        width: 100%;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #classes img {
+        width: 250px;
+        height: 280px;
+    }
+
+    #card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards {
+        width: 250px;
+        height: 280px;
+        margin: 50px;
+
+    }
+
+
+    #class-btn {
+        margin-top: 40px;
+    }
+
+
+    #tag-line-small {
+        text-align: center;
+    }
+
+
+    #about{
+        width: 100%;
+    }
+    #about div{
+        width: 200px;
+        margin: 100px;
+       
+    }
+    #about div h1{ 
+        font-size: 20px;
+    }
+    #about div span{ 
+        font-size: 15px;
+    }
+    #about-btn{
+        width: 180px;
+        height: 60px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+
+    #Class-banner {
+        width: 100%;
+    }
+    #Class-banner  div{
+        width: 200px; 
+    }
+    #Class-banner  div h1{ 
+        font-size: 20px;
+    }
+    #Class-banner  div span{ 
+        font-size: 15px;
+    }
+    #Class-banner-btn{
+        width: 180px;
+        height: 60px;
+        font-size: 15px;
+        text-align: center;
+    }
+    #asking {
+        width: 100%;
+    }
+    #asking div{
+        width: 200px;
+        margin: 0 auto;
+       
+    }
+    #asking div h1{
+        font-size: 30px;
+
+    }
+    
+    
+    #asking-btn{
+
+        width: 180px;
+        font-size: 15px;
+        margin: 0 auto;
+        
+    }
+    #address ul{
+        width: 150px;
+    }
+    
+    #address ul{
+        width: 150px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 280px) {
+    #caption-parent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        height: 440px;
+        width: 280px;
+
+    }
+
+    #classes {
+        width: 280px;
+        overflow: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    #classes img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards {
+        width: 150px;
+        height: 150px;
+        margin: 50px;
+
+    }
+
+    #card h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px;
+    }
+
+    #class-btn {
+        margin-top: 40px;
+    }
+
+    #tag-line {
+        font-size: 30px;
+    }
+
+    #tag-line-small {
+        text-align: center;
+    }
+    #about{
+        width: 280px;
+    }
+    #about div{
+        width: 180px;
+        margin: 0px;
+       
+    }
+    #about div h1{ 
+        font-size: 20px;
+    }
+    #about div span{ 
+        font-size: 15px;
+    }
+    #Class-banner {
+        width: 280px;
+    }
+    #Class-banner  div{
+        width: 180px;
+        margin: 0px;
+       
+    }
+    #Class-banner  div h1{ 
+        font-size: 20px;
+    }
+    #Class-banner  div span{ 
+        font-size: 15px;
+    }
+    #asking {
+        width: 280px;
+    }
+    #asking div{
+        width: 280px;
+        flex-wrap: nowrap;
+    }
+    #asking-btn{
+
+        width: 180px;
+        font-size: 15px;
+        
+    }
+    #address ul{
+        width: 150px;
+    }
+
+}

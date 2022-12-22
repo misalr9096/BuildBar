@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link
+          href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Roboto:wght@900&display=swap"
+          rel="stylesheet"
+        />
+
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        />
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+            background-color: black;
+            color: white;
+        }
+        #main-Container{
+            width: 100%;
+            height: 700px;
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around
+
+        }
+        #imgs{
+            height: 700px;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #main-Container img{
+            height: 300px;
+            width: 500px;
+            margin: 20px;
+        }
+        #info{
+            height: 500px;
+            width: 600px;
+            
+        }
+        #info h1{
+            margin: 20px;
+            letter-spacing: 1px;
+            
+            }
+        #info h3{
+            margin: 20px;
+            letter-spacing: 1px;
+            
+        }
+        #info p{
+            margin: 20px;
+            font-weight: normal;
+            font-family: "DM Sans", sans-serif;
+            letter-spacing: 2px;
+        }
+        .btn {
+    display: block;
+    margin-top: 80px;
+    text-decoration: none;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: #ff1010;
+}
+#info a {
+    margin:20px;
+    margin-top: 40px;
+}
+#asking {
+    width: 100%;
+    overflow: auto;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  #asking div {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: auto;
+  }
+
+  #asking div h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 10px;
+    color: black;
+    background: none;
+  }
+
+  #asking-btn {
+    margin: 20px;
+  }
+
+  footer {
+    width: 100%;
+    background-color: black;
+    height: 700px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #working {
+    width: 500px;
+    margin: 100px;
+    height: 500px;
+  }
+
+  #working span {
+    display: block;
+    font-family: "DM Sans", sans-serif;
+    padding: 10px;
+  }
+
+  #working h1 {
+    padding: 10px;
+    text-align: start;
+  }
+
+  #address {
+    width: 500px;
+    margin: 100px;
+    height: 500px;
+  }
+
+  #address span {
+    display: block;
+    font-family: "DM Sans", sans-serif;
+    padding: 10px;
+  }
+
+  #address h1 {
+    padding: 10px;
+    text-align: start;
+  }
+
+  #address ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 50px;
+    width: 200px;
+    margin-left: 30px;
+  }
+
+  #address ul li i {
+    font-size: 30px;
+    margin: 7px;
+    color: white;
+  }
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    #main-Container{
+        flex-direction: column;
+        height: 1200px;
+    }
+    #info{
+        margin: 20px;
+        width: 500px;
+    }
+
+    #main-Container img{
+        width: 400px;
+    }
+    #imgs{
+        width: 400px;
+    }
+
+    #asking div {
+      width: 576px;
+      height: 300px;
+    }
+
+    #asking div h1 {
+      font-size: 30px;
+    }
+
+    #asking-btn {
+      margin: 20px;
+      font-size: 15px;
+      width: 200px;
+    }
+    .cards {
+      width: 300px;
+      height: 300px;
+      margin: 50px;
+      /* background-color: white; */
+    }
+    #Container div img {
+      height: 300px;
+      width: 300px;
+    }
+    #Container div a {
+      font-size: 15px;
+    }
+    
+}
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+    #main-Container{
+        flex-direction: column;
+        height: 1200px;
+    }
+    #info{
+        margin: 20px;
+        width: 400px;
+    }
+
+    #main-Container img{
+        width: 400px;
+    }
+    #imgs{
+        width: 400px;
+    }
+    #asking div {
+      width: 576px;
+      height: 300px;
+    }
+
+    #asking div h1 {
+      font-size: 30px;
+    }
+
+    #asking-btn {
+      margin: 20px;
+      font-size: 15px;
+      width: 200px;
+    }
+    .cards {
+      width: 300px;
+      height: 300px;
+      margin: 50px;
+      /* background-color: white; */
+    }
+    #Container div img {
+      height: 300px;
+      width: 300px;
+    }
+    #Container div a {
+      font-size: 15px;
+    }
+
+}
+@media only screen and (max-width: 280px){
+    #main-Container{
+        flex-direction: column;
+        height: 1200px;
+    }
+    #info{
+        margin: 20px;
+        width: 280px;
+    }
+
+    #main-Container img{
+        width: 280px;
+    }
+    #imgs{
+        width: 280px;
+    }
+    #asking div {
+      width:  280px;
+      height: 300px;
+    }
+
+    #asking div h1 {
+      font-size: 30px;
+    }
+
+    #asking-btn {
+      margin: 20px;
+      font-size: 15px;
+      width: 200px;
+    }
+    .cards {
+      width: 300px;
+      height: 300px;
+      margin: 50px;
+      /* background-color: white; */
+    }
+    #Container div img {
+      height: 200px;
+      width: 200px;
+    }
+    #Container div a {
+      font-size: 15px;
+    }
+    #Container{
+      width: 280px;
+      flex-wrap: wrap;
+   
+    }
+  
+}
+    </style>
+</head>
+<body>
+    <div id="main-Container">
+        <div id="info">
+
+            <h1>Cardio Boxing</h1>
+            <h3>Every Monday and Friday 17:00</h3>
+
+            <P>Sometimes nothing feels as good as putting on your gloves and kicking the crap out of a boxing bag or a set of pads. In our cardio boxing classes, we’ll focus on great technique and build stamina through boxing-inspired routines.<br><br> There won’t be any contact exercises, meaning that you can get the benefits of a boxing workout without the fear of breaking someone’s nose. </P>
+
+            <a href="./Plans.html" class="btn">BookMembership</a>
+        </div>
+        <div id="imgs">
+            <img src="../Images/CardioBoxing.avif" alt="">
+            <img src="../Images/CardioBoxing_1.avif" alt="">
+        </div>
+    </div>
+
+    <section id="asking">
+        <div>
+          <h1>ARE YOU READY FOR CHANGES?</h1>
+          <a href="./Form.html" id="asking-btn" class="btn">Make it happen</a>
+        </div>
+      </section>
+
+      <footer>
+        <div id="working">
+          <h1>WORKING HOURS</h1>
+          <div>
+            <span>Monday - Friday 5:00 AM - 12:00 AM</span>
+            <span>Sunday - Saturday 8:00 AM - 10:00 PM</span>
+          </div>
+        </div>
+
+        <div id="address">
+          <h1>ADDRESS</h1>
+          <span>Matoshri Colony Rd, Gujar Nagar, Sai Colony, Thergaon, Pimpri-Chinchwad, Maharashtra 411033</span>
+          <ul type="none">
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+
+            <li>
+              <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+            </li>
+
+            <li>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+</body>
+</html>
